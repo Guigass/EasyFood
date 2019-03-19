@@ -5040,4 +5040,5 @@ body .jvectormap-zoomout {
 .media {
   background-color: rgba(0, 0, 0, 0.3);
   padding: 5px;
+  border-radius: 8px;
 }
