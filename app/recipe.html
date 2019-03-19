@@ -2,111 +2,244 @@
 <html lang="en">
 
 <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-   <meta name="description" content="Bootstrap Admin App">
-   <meta name="keywords" content="app, responsive, jquery, bootstrap, dashboard, admin">
-   <link rel="icon" type="image/x-icon" href="favicon.ico">
-   <title>Angle - Bootstrap Admin Template</title>
-   <!-- =============== VENDOR STYLES ===============-->
-   <!-- FONT AWESOME-->
-   <link rel="stylesheet" href="vendor/@fortawesome/fontawesome-free/css/brands.css">
-   <link rel="stylesheet" href="vendor/@fortawesome/fontawesome-free/css/regular.css">
-   <link rel="stylesheet" href="vendor/@fortawesome/fontawesome-free/css/solid.css">
-   <link rel="stylesheet" href="vendor/@fortawesome/fontawesome-free/css/fontawesome.css">
-   <!-- SIMPLE LINE ICONS-->
-   <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
-   <!-- ANIMATE.CSS-->
-   <link rel="stylesheet" href="vendor/animate.css/animate.css">
-   <!-- WHIRL (spinners)-->
-   <link rel="stylesheet" href="vendor/whirl/dist/whirl.css">
-   <!-- =============== PAGE VENDOR STYLES ===============-->
-   <!-- WEATHER ICONS-->
-   <link rel="stylesheet" href="vendor/weather-icons/css/weather-icons.css">
-   <!-- =============== BOOTSTRAP STYLES ===============-->
-   <link rel="stylesheet" href="css/bootstrap.css" id="bscss">
-   <!-- =============== APP STYLES ===============-->
-   <link rel="stylesheet" href="css/app.css" id="maincss">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Bootstrap Admin App">
+  <meta name="keywords" content="app, responsive, jquery, bootstrap, dashboard, admin">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Angle - Bootstrap Admin Template</title>
+  <!-- =============== VENDOR STYLES ===============-->
+  <!-- FONT AWESOME-->
+  <link rel="stylesheet" href="vendor/@fortawesome/fontawesome-free/css/brands.css">
+  <link rel="stylesheet" href="vendor/@fortawesome/fontawesome-free/css/regular.css">
+  <link rel="stylesheet" href="vendor/@fortawesome/fontawesome-free/css/solid.css">
+  <link rel="stylesheet" href="vendor/@fortawesome/fontawesome-free/css/fontawesome.css">
+  <!-- SIMPLE LINE ICONS-->
+  <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+  <!-- ANIMATE.CSS-->
+  <link rel="stylesheet" href="vendor/animate.css/animate.css">
+  <!-- WHIRL (spinners)-->
+  <link rel="stylesheet" href="vendor/whirl/dist/whirl.css">
+  <!-- =============== PAGE VENDOR STYLES ===============-->
+  <!-- WEATHER ICONS-->
+  <link rel="stylesheet" href="vendor/weather-icons/css/weather-icons.css">
+  <!-- =============== BOOTSTRAP STYLES ===============-->
+  <link rel="stylesheet" href="css/bootstrap.css" id="bscss">
+  <!-- =============== APP STYLES ===============-->
+  <link rel="stylesheet" href="css/app.css" id="maincss">
+
+  <link rel="stylesheet" href="css/recipe.css">
+
 </head>
 
 <body class="layout-h">
-   <div class="wrapper">
-      <!-- top navbar-->
-      <header class="topnavbar-wrapper">
-         <!-- START Top Navbar-->
-         <nav class="navbar topnavbar navbar-expand-lg navbar-light">
-            <!-- START navbar header-->
-            <div class="navbar-header">
-               <a class="navbar-brand" href="#/">
-                  <div class="brand-logo">
-                     <img class="img-fluid" src="img/logo.png" alt="App Logo">
-                  </div>
-                  <div class="brand-logo-collapsed">
-                     <img class="img-fluid" src="img/logo-single.png" alt="App Logo">
-                  </div>
-               </a>
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topnavbar">
-                  <span class="navbar-toggler-icon"></span>
-               </button>
+  <div class="wrapper">
+    <!-- top navbar-->
+    <header class="topnavbar-wrapper">
+      <!-- START Top Navbar-->
+      <nav class="navbar topnavbar navbar-expand-lg navbar-light">
+        <!-- START navbar header-->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#/">
+            <div class="brand-logo">
+              <img class="img-fluid" src="img/logo.png" alt="Easy Food">
             </div>
-            <!-- END navbar header-->
-            <!-- START Nav wrapper-->
-            <div class="navbar-collapse collapse" id="topnavbar">
-               <!-- START Left navbar-->
-               <ul class="nav navbar-nav mr-auto flex-column flex-lg-row">
-                  <li class="nav-item">
-                     <a class="nav-link" href="login.html">Sair</a>
-                  </li>
-               </ul>
-               <!-- END Left navbar-->
-               <!-- END Right Navbar-->
+            <div class="brand-logo-collapsed">
+              <img class="img-fluid" src="img/logo-single.png" alt="Easy Food">
             </div>
-            <!-- END Nav wrapper-->
-         </nav>
-         <!-- END Top Navbar-->
-      </header>
-      <!-- Main section-->
-      <section class="section-container">
-         <!-- Page content-->
-         <div class="content-wrapper">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topnavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <!-- END navbar header-->
+        <!-- START Nav wrapper-->
+        <div class="navbar-collapse collapse" id="topnavbar">
+          <!-- START Left navbar-->
+          <ul class="nav navbar-nav mr-auto flex-column flex-lg-row">
+            <li class="nav-item">
+              <a class="nav-link" href="recipelist.html">Receitas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="planner.html">Planejamento</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shoppinglist.html">Lista de Compras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Sair</a>
+            </li>
+          </ul>
+          <!-- END Left navbar-->
+          <!-- END Right Navbar-->
+        </div>
+        <!-- END Nav wrapper-->
+      </nav>
+      <!-- END Top Navbar-->
+    </header>
+    <!-- Main section-->
+    <section class="section-container">
+      <!-- Page content-->
+      <div class="content-wrapper">
+        <div class="unwrap">
+          <div class="bg-cover" style="background-image: url(img/recipes/panqueca_carne.jpg)">
+            <div class="p-4 text-center text-white foto-receita">
+              <h3 class="m-0">Panqueca de Carne Moída</h3>
+              <p>Receita de Panqueca de carne moída fácil</p>
+              <p></p>
+            </div>
+          </div>
+          <div class="text-center bg-gray-dark p-3 mb-4">
+            <div class="row">
+              <div class="col-6 br">
+                <h3 class="m-0">40</h3>
+                <p class="m-0">Minutos</p>
+              </div>
+              <div class="col-6">
+                <h3 class="m-0">10</h3>
+                <p class="m-0">Porções</p>
+              </div>
+            </div>
+          </div>
 
-         </div>
-      </section>
-      <!-- Page footer-->
-      <footer>
-         <span>&copy; 2018 - Angle</span>
-      </footer>
-   </div>
-   <!-- =============== VENDOR SCRIPTS ===============-->
-   <!-- MODERNIZR-->
-   <script src="vendor/modernizr/modernizr.custom.js"></script>
-   <!-- STORAGE API-->
-   <script src="vendor/js-storage/js.storage.js"></script>
-   <!-- SCREENFULL-->
-   <script src="vendor/screenfull/dist/screenfull.js"></script>
-   <!-- i18next-->
-   <script src="vendor/i18next/i18next.js"></script>
-   <script src="vendor/i18next-xhr-backend/i18nextXHRBackend.js"></script>
-   <script src="vendor/jquery/dist/jquery.js"></script>
-   <script src="vendor/popper.js/dist/umd/popper.js"></script>
-   <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
-   <!-- =============== PAGE VENDOR SCRIPTS ===============-->
-   <!-- SPARKLINE-->
-   <script src="vendor/jquery-sparkline/jquery.sparkline.js"></script>
-   <!-- FLOT CHART-->
-   <script src="vendor/flot/jquery.flot.js"></script>
-   <script src="vendor/jquery.flot.tooltip/js/jquery.flot.tooltip.js"></script>
-   <script src="vendor/flot/jquery.flot.resize.js"></script>
-   <script src="vendor/flot/jquery.flot.pie.js"></script>
-   <script src="vendor/flot/jquery.flot.time.js"></script>
-   <script src="vendor/flot/jquery.flot.categories.js"></script>
-   <script src="vendor/jquery.flot.spline/jquery.flot.spline.js"></script>
-   <!-- EASY PIE CHART-->
-   <script src="vendor/easy-pie-chart/dist/jquery.easypiechart.js"></script>
-   <!-- MOMENT JS-->
-   <script src="vendor/moment/min/moment-with-locales.js"></script>
-   <!-- =============== APP SCRIPTS ===============-->
-   <script src="js/app.js"></script>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="card card-default">
+              <div class="card-body">
+                <div class="text-center">
+                  <h3 class="mt-0">Ingredientes</h3>
+                </div>
+                <hr>
+                <div class="text-center">
+                  <h4 class="mt-0">Massa</h4>
+                </div>
+                <ul>
+                  <li><span>1 e 1/2 xícara (chá) de farinha de trigo</span></li>
+                  <li><span>1 xícara (chá) de leite</span></li>
+                  <li><span>2 ovos</span></li>
+                  <li><span>4 colheres (sopa) de óleo</span></li>
+                  <li><span>sal a gosto</span></li>
+                </ul>
+                <br />
+                <div class="text-center">
+                  <h4 class="mt-0">Recheio</h4>
+                </div>
+                <ul>
+                  <li><span>300 g de carne moída</span></li>
+                  <li><span>2 colheres (sopa) de cebola picada ou ralada</span></li>
+                  <li><span>1/2 tomate cortado em cubos</span></li>
+                  <li><span>1/2 lata de extrato de tomate</span></li>
+                  <li><span>1 caixa de creme de leite</span></li>
+                  <li><span>sal a gosto</span></li>
+                  <li><span>400 g de mussarela fatiado</span></li>
+                  <li><span>queijo ralado a gosto</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card card-default">
+              <div class="card-body">
+                <div class="text-center">
+                  <h3 class="mt-0">Modo de Preparo</h3>
+                </div>
+                <hr>
+                <div class="text-center">
+                  <h4 class="mt-0">Massa</h4>
+                </div>
+                <ol>
+                  <li><span>Bata no liquidificador os ovos, o leite, o óleo, e acrescente a farinha de trigo aos poucos.</span></li>
+                  <li><span>Após acrescentar toda a farinha de trigo, adicione sal a gosto.</span></li>
+                  <li><span>Misture a massa até obter uma consistência cremosa.</span></li>
+                  <li><span>Com um papel toalha, espalhe óleo por toda a frigideira e despeje uma concha de massa.</span></li>
+                  <li><span>Faça movimentos circulares para que a massa se espalhe por toda a frigideira.</span></li>
+                  <li><span>Espere até a massa soltar do fundo e vire a massa para fritar do outro lado.</span></li>
+                </ol>
+                <br />
+                <div class="text-center">
+                  <h4 class="mt-0">Recheio</h4>
+                </div>
+                <ol>
+                  <li><span>Em uma panela, doure a cebola com o óleo e acrescente a carne.</span></li>
+                  <li><span>Deixe cozinhar até que saia água da carne, diminua o fogo e tampe.</span></li>
+                  <li><span>Acrescente o tomate picado e tampe novamente.</span></li>
+                  <li><span>Deixe cozinhar por mais 3 minutos e misture.</span></li>
+                  <li><span>Acrescente o extrato de tomate e temperos a gosto.</span></li>
+                  <li><span>Deixe cozinhar por mais 10 minutos.</span></li>
+                  <li><span>Quando o molho engrossar, desligue o fogo.</span></li>
+                  <li><span>Deixe esfriar o molho, acrescente o creme de leite e misture bem.</span></li>
+                  <li><span>Quando estiver bem homogêneo, leve novamente ao fogo e deixe cozinhar em fogo baixo por mais 5 minutos.</span></li>
+                </ol>
+                <br />
+                <div class="text-center">
+                  <h4 class="mt-0">Montagem</h4>
+                </div>
+                <ol>
+                  <li><span>Recheie a panqueca com uma fatia de mussarela, uma porção de carne e enrole.</span></li>
+                  <li><span>Faça esse processo com todas as panquecas.</span></li>
+                  <li><span>Despeje um pouco de caldo no fundo de um refratário, para untar.</span></li>
+                  <li><span>Disponha as panquecas já prontas no refratário e despeje sobre elas o restante do molho.</span></li>
+                  <li><span>Polvilhe queijo ralado sobre as panquecas.</span></li>
+                  <li><span>Leve ao forno para gratinar, em fogo médio, por 20 minutos ou até que o queijo esteja derretido.</span></li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="card card-default">
+              <div class="card-body">
+                <div class="text-center">
+                  <h3 class="mt-0">Observações</h3>
+                </div>
+                <hr>
+                <p>Essa massa também serve para panquecas doces. Basta substituir o sal por açúcar e fazer o recheio de frutas, doces e chocolates. Use sua criatividade!</p>
+              </div>
+            </div>
+
+            <div class="float-right">
+              <button type="button" class="btn btn-warning btn-lg">Editar Receita</button>
+              <button type="button" class="btn btn-primary btn-lg">Adicionar ao Planejamento</button>
+            </div>
+            
+
+          </div>
+
+        </div>
+
+
+      </div>
+    </section>
+  </div>
+  <!-- =============== VENDOR SCRIPTS ===============-->
+  <!-- MODERNIZR-->
+  <script src="vendor/modernizr/modernizr.custom.js"></script>
+  <!-- STORAGE API-->
+  <script src="vendor/js-storage/js.storage.js"></script>
+  <!-- SCREENFULL-->
+  <script src="vendor/screenfull/dist/screenfull.js"></script>
+  <!-- i18next-->
+  <script src="vendor/i18next/i18next.js"></script>
+  <script src="vendor/i18next-xhr-backend/i18nextXHRBackend.js"></script>
+  <script src="vendor/jquery/dist/jquery.js"></script>
+  <script src="vendor/popper.js/dist/umd/popper.js"></script>
+  <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+  <!-- =============== PAGE VENDOR SCRIPTS ===============-->
+  <!-- SPARKLINE-->
+  <script src="vendor/jquery-sparkline/jquery.sparkline.js"></script>
+  <!-- FLOT CHART-->
+  <script src="vendor/flot/jquery.flot.js"></script>
+  <script src="vendor/jquery.flot.tooltip/js/jquery.flot.tooltip.js"></script>
+  <script src="vendor/flot/jquery.flot.resize.js"></script>
+  <script src="vendor/flot/jquery.flot.pie.js"></script>
+  <script src="vendor/flot/jquery.flot.time.js"></script>
+  <script src="vendor/flot/jquery.flot.categories.js"></script>
+  <script src="vendor/jquery.flot.spline/jquery.flot.spline.js"></script>
+  <!-- EASY PIE CHART-->
+  <script src="vendor/easy-pie-chart/dist/jquery.easypiechart.js"></script>
+  <!-- MOMENT JS-->
+  <script src="vendor/moment/min/moment-with-locales.js"></script>
+  <!-- =============== APP SCRIPTS ===============-->
+  <script src="js/app.js"></script>
 </body>
 
 </html>

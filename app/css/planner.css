@@ -1,0 +1,18 @@
+.divChangeDate {
+    border-bottom: solid;
+    margin-bottom: 10px;
+}
+
+.divChangeDate .badge {
+    font-size: 15px;
+}
+
+.titulo-dia {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.card hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

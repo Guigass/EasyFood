@@ -34,48 +34,106 @@
       <!-- top navbar-->
       <header class="topnavbar-wrapper">
          <!-- START Top Navbar-->
-         <nav class="navbar topnavbar navbar-expand-lg navbar-light">
-            <!-- START navbar header-->
-            <div class="navbar-header">
-               <a class="navbar-brand" href="#/">
-                  <div class="brand-logo">
-                     <img class="img-fluid" src="img/logo.png" alt="App Logo">
-                  </div>
-                  <div class="brand-logo-collapsed">
-                     <img class="img-fluid" src="img/logo-single.png" alt="App Logo">
-                  </div>
-               </a>
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topnavbar">
-                  <span class="navbar-toggler-icon"></span>
-               </button>
-            </div>
-            <!-- END navbar header-->
-            <!-- START Nav wrapper-->
-            <div class="navbar-collapse collapse" id="topnavbar">
-               <!-- START Left navbar-->
-               <ul class="nav navbar-nav mr-auto flex-column flex-lg-row">
-                  <li class="nav-item">
-                     <a class="nav-link" href="login.html">Sair</a>
-                  </li>
-               </ul>
-               <!-- END Left navbar-->
-               <!-- END Right Navbar-->
-            </div>
-            <!-- END Nav wrapper-->
-         </nav>
+        <nav class="navbar topnavbar navbar-expand-lg navbar-light">
+          <!-- START navbar header-->
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#/">
+              <div class="brand-logo">
+                <img class="img-fluid" src="img/logo.png" alt="Easy Food">
+              </div>
+              <div class="brand-logo-collapsed">
+                <img class="img-fluid" src="img/logo-single.png" alt="Easy Food">
+              </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topnavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <!-- END navbar header-->
+          <!-- START Nav wrapper-->
+          <div class="navbar-collapse collapse" id="topnavbar">
+            <!-- START Left navbar-->
+            <ul class="nav navbar-nav mr-auto flex-column flex-lg-row">
+              <li class="nav-item">
+                <a class="nav-link" href="recipelist.html">Receitas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="planner.html">Planejamento</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shoppinglist.html">Lista de Compras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Sair</a>
+              </li>
+            </ul>
+            <!-- END Left navbar-->
+            <!-- END Right Navbar-->
+          </div>
+          <!-- END Nav wrapper-->
+        </nav>
          <!-- END Top Navbar-->
       </header>
       <!-- Main section-->
       <section class="section-container">
          <!-- Page content-->
-         <div class="content-wrapper">
+        <div class="content-wrapper">
 
-         </div>
+          <a href="#" class="card b text-white">
+            <div class="card-body bg-cover clearfix" style="background-image: url(img/recipes/ovos_mexidos.jpg)">
+              <div class="media mt-0 align-items-center">
+                <div class="media-body">
+                  <div class="d-flex">
+                    <div>
+                      <h4 class="m-0">Ovos Mexidos</h4>
+                      <p></p>
+                      <span class="badge badge-warning"> 5 Minutos</span>
+                      <span class="badge badge-success"> 2 Porções</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="recipe.html" class="card b text-white">
+            <div class="card-body bg-cover clearfix" style="background-image: url(img/recipes/panqueca_carne.jpg)">
+              <div class="media mt-0 align-items-center">
+                <div class="media-body">
+                  <div class="d-flex">
+                    <div>
+                      <h4 class="m-0">Panqueca de Carne Moída</h4>
+                      <p></p>
+                      <span class="badge badge-warning"> 40 Minutos</span>
+                      <span class="badge badge-success"> 10 Porções</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="card b text-white">
+            <div class="card-body bg-cover clearfix" style="background-image: url(img/recipes/salada_kani.jpg)">
+              <div class="media mt-0 align-items-center">
+                <div class="media-body">
+                  <div class="d-flex">
+                    <div>
+                      <h4 class="m-0">Salada com Kani-Kama</h4>
+                      <p></p>
+                      <span class="badge badge-warning"> 20 Minutos</span>
+                      <span class="badge badge-success"> 1 Porção</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <button type="button" class="btn btn-square btn-success btn-block">Adicionar Nova Receita</button>
+
+        </div>
       </section>
-      <!-- Page footer-->
-      <footer>
-         <span>&copy; 2018 - Angle</span>
-      </footer>
    </div>
    <!-- =============== VENDOR SCRIPTS ===============-->
    <!-- MODERNIZR-->
