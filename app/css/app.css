@@ -316,6 +316,7 @@ _:-ms-lang(x),
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   overflow: hidden; }
+
   .layout-fs .wrapper .section-container .content-wrapper {
     width: 100%;
     height: 100%;
@@ -5050,3 +5051,7 @@ body .jvectormap-zoomout {
 .rounded-top-left {
   border-top-left-radius: 0.25rem !important;
 }
+
+iframe {
+
+} 
