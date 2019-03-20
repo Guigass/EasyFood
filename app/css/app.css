@@ -562,8 +562,12 @@ _:-ms-lang(x),
   @media (min-width: 992px) {
     .layout-h .topnavbar .navbar-header {
       width: auto; } }
-  .layout-h .topnavbar .navbar-header .navbar-brand {
-    min-height: 55px; }
+.layout-h .topnavbar .navbar-header .navbar-brand {
+  min-height: 55px;
+  width: 100%;
+  margin-left: 54px;
+  text-align:center;
+}
 
 .layout-h .topnavbar .navbar-toggler {
   border: 0;

@@ -37,6 +37,7 @@
       <nav class="navbar topnavbar navbar-expand-lg navbar-light">
         <!-- START navbar header-->
         <div class="navbar-header">
+          <a href="javascript:history.back();" style="position: absolute; top: 15px; left: 10px; color: #FFF;"><i class="fa-2x fas fa-chevron-circle-left"></i></a>
           <a class="navbar-brand" href="index.html">
             <div class="brand-logo">
               <img class="img-fluid" src="img/logo.png" alt="App Logo">
@@ -58,7 +59,7 @@
               <a class="nav-link" href="recipelist.html">Receitas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Planejamento</a>
+              <a class="nav-link" href="planner.html">Planejamento</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="shoppinglist.html">Lista de Compras</a>
@@ -94,7 +95,20 @@
             <p class="text-bold mb-0">
               <span class="close">×</span>
               <span class="inline checkbox c-checkbox"><label><input id="todo-item-1" type="checkbox"><span class="fa fa-check"></span></label></span>
-              <span class="todo-title">Patinho - 1kg</span>
+              <span class="todo-title">Carne Moída - 300g</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="list-heading">
+          <div>Hortifruti</div>
+        </div>
+        <div class="card todo-item">
+          <div class="card-header">
+            <p class="text-bold mb-0">
+              <span class="close">×</span>
+              <span class="inline checkbox c-checkbox"><label><input id="todo-item-1" type="checkbox"><span class="fa fa-check"></span></label></span>
+              <span class="todo-title">Ovos - 2 unidades</span>
             </p>
           </div>
         </div>
@@ -103,7 +117,16 @@
             <p class="text-bold mb-0">
               <span class="close">×</span>
               <span class="inline checkbox c-checkbox"><label><input id="todo-item-1" type="checkbox"><span class="fa fa-check"></span></label></span>
-              <span class="todo-title">Peito de Frango - 1.5kg</span>
+              <span class="todo-title">Cebola - 1 unidade</span>
+            </p>
+          </div>
+        </div>
+        <div class="card todo-item">
+          <div class="card-header">
+            <p class="text-bold mb-0">
+              <span class="close">×</span>
+              <span class="inline checkbox c-checkbox"><label><input id="todo-item-1" type="checkbox"><span class="fa fa-check"></span></label></span>
+              <span class="todo-title">Tomate - 1 unidade</span>
             </p>
           </div>
         </div>
@@ -116,22 +139,13 @@
             <p class="text-bold mb-0">
               <span class="close">×</span>
               <span class="inline checkbox c-checkbox"><label><input id="todo-item-1" type="checkbox"><span class="fa fa-check"></span></label></span>
-              <span class="todo-title">Queijo Prato - 200gr</span>
-            </p>
-          </div>
-        </div>
-        <div class="card todo-item">
-          <div class="card-header">
-            <p class="text-bold mb-0">
-              <span class="close">×</span>
-              <span class="inline checkbox c-checkbox"><label><input id="todo-item-1" type="checkbox"><span class="fa fa-check"></span></label></span>
-              <span class="todo-title">Presunto - 200gr</span>
+              <span class="todo-title">Queijo Mussarela - 400g</span>
             </p>
           </div>
         </div>
 
         <div class="list-heading">
-          <div>Temperos</div>
+          <div>Complementos e Temperos</div>
         </div>
         <div class="card todo-item">
           <div class="card-header">
@@ -147,7 +161,16 @@
             <p class="text-bold mb-0">
               <span class="close">×</span>
               <span class="inline checkbox c-checkbox"><label><input id="todo-item-1" type="checkbox"><span class="fa fa-check"></span></label></span>
-              <span class="todo-title">Orégano - 100gr</span>
+              <span class="todo-title">Creme de leite - 1 unidade</span>
+            </p>
+          </div>
+        </div>
+        <div class="card todo-item">
+          <div class="card-header">
+            <p class="text-bold mb-0">
+              <span class="close">×</span>
+              <span class="inline checkbox c-checkbox"><label><input id="todo-item-1" type="checkbox"><span class="fa fa-check"></span></label></span>
+              <span class="todo-title">Extrato de Tomate - 1 lata</span>
             </p>
           </div>
         </div>
@@ -194,8 +217,18 @@
   <script src="js/app.js"></script>
 
   <script type="text/javascript">
-    $(".card-header input").click(function () {
-      $(this).parentsUntil(".todo-item").parent().toggleClass("todo-complete");
+    $(document).ready(function () {
+      $(".card-header input").click(function () {
+        $(this).parentsUntil(".todo-item").parent().toggleClass("todo-complete");
+      });
+
+      $(".card-header").click(function () {
+        $(this).find("input:checkbox").click();
+      });
+
+      $(".close").click(function () {
+        $(this).parentsUntil(".card").parent().remove();
+      });
     });
   </script>
 </body>

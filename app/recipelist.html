@@ -37,6 +37,7 @@
       <nav class="navbar topnavbar navbar-expand-lg navbar-light">
         <!-- START navbar header-->
         <div class="navbar-header">
+          <a href="javascript:history.back();" style="position: absolute; top: 15px; left: 10px; color: #FFF;"><i class="fa-2x fas fa-chevron-circle-left"></i></a>
           <a class="navbar-brand" href="index.html">
             <div class="brand-logo">
               <img class="img-fluid" src="img/logo.png" alt="Easy Food">
@@ -58,7 +59,7 @@
               <a class="nav-link" href="recipelist.html">Receitas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Planejamento</a>
+              <a class="nav-link" href="planner.html">Planejamento</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="shoppinglist.html">Lista de Compras</a>
@@ -78,6 +79,26 @@
     <section class="section-container">
       <!-- Page content-->
       <div class="content-wrapper">
+        <div class="content-heading">
+          <div>
+            Lista de Receitas
+            <small>Encontre suas receitas favoritas ou crie suas próprias</small>
+          </div>
+        </div>
+
+        <form action="#" _lpchecked="1">
+          <div class="input-group input-group-lg">
+            <input class="form-control form-control-lg rounded-0" type="text" name="term" placeholder="Busca"><select class="form-control form-control-lg">
+              <option>Todas</option>
+              <option>Café</option>
+              <option>Almoço</option>
+              <option>Janta</option>
+            </select>
+            <div class="input-group-append"><button class="btn btn-info btn-lg b0 rounded-0" type="button"><strong><i class="fas fa-search"></i></strong></button></div>
+          </div>
+        </form>
+
+        <hr />
 
         <a href="#" class="card b text-white">
           <div class="card-body bg-cover clearfix" style="background-image: url(img/recipes/ovos_mexidos.jpg)">
@@ -130,7 +151,7 @@
           </div>
         </a>
 
-        <button type="button" class="btn btn-square btn-success btn-block">Adicionar Nova Receita</button>
+        <button type="button" class="btn btn-square btn-success btn-block"><i class="fas fa-plus"></i> Adicionar Nova Receita</button>
 
       </div>
     </section>
