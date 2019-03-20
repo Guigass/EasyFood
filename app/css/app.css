@@ -5046,3 +5046,7 @@ body .jvectormap-zoomout {
   padding: 5px;
   border-radius: 8px;
 }
+
+.rounded-top-left {
+  border-top-left-radius: 0.25rem !important;
+}
